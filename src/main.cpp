@@ -29,7 +29,6 @@
 
 #define _BASETSD_H
 
-#include "RgaUtils.h"
 #include "im2d.h"
 #include "opencv2/opencv.hpp"
 #include "opencv2/highgui.hpp"
