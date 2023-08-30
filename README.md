@@ -30,10 +30,30 @@ Special made for the Rock 5 NPU, see [Q-engineering deep learning examples](http
 
 ## Dependencies.
 To run the application, you have to:
-- A Rock 5 or an Organge Pi 5.
-- [rknpu2](https://github.com/rockchip-linux/rknpu2) installed. <br/>
-- OpenCV 64 bit installed. [Install OpenCV 4.5](https://qengineering.eu/install-opencv-4.5-on-raspberry-64-os.html) <br/>
+- A Rock 5 or an Orange Pi 5.
+- rknpu2 installed. <br/>
+- OpenCV 64-bit installed.
 - Code::Blocks installed. (```$ sudo apt-get install codeblocks```)
+
+### Installing the dependencies.
+Start with the usual 
+```
+$ sudo apt-get update 
+$ sudo apt-get upgrade
+$ sudo apt-get install curl libcurl3
+$ sudo apt-get install cmake wget
+```
+#### OpenCV
+Follow the Raspberry Pi 4 [guide](https://qengineering.eu/install-opencv-on-raspberry-64-os.html).<br>
+
+#### RKNPU2
+```
+$ git clone --depth=1 https://github.com/rockchip-linux/rknpu2.git
+$ cd rknu2/runtime/RK3588/Linux/librknn_api/include
+$ sudo cp ./rknn* /usr/local/include
+$ cd rknu2/runtime/RK3588/Linux/librknn_api/aarch64
+$ sudo cp ./lib* /usr/local/lib
+```
 
 ------------
 
