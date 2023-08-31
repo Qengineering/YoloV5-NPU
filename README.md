@@ -31,7 +31,8 @@ Special made for the Rock 5 NPU, see [Q-engineering deep learning examples](http
 ## Dependencies.
 To run the application, you have to:
 - A Rock 5 or an Orange Pi 5.
-- rknpu2 installed. <br/>
+- rknpu2 installed.
+- librga installed.
 - OpenCV 64-bit installed.
 - Code::Blocks installed. (```$ sudo apt-get install codeblocks```)
 
@@ -52,6 +53,14 @@ $ git clone --depth=1 https://github.com/rockchip-linux/rknpu2.git
 $ cd rknu2/runtime/RK3588/Linux/librknn_api/include
 $ sudo cp ./rknn* /usr/local/include
 $ cd rknu2/runtime/RK3588/Linux/librknn_api/aarch64
+$ sudo cp ./lib* /usr/local/lib
+```
+#### Librga
+```
+$ git clone --depth=1 https://github.com/airockchip/librga.git
+$ cd librga/include
+$ sudo cp ./*.h /usr/local/include
+$ cd librga/libs/Linux/gcc-aarch64
 $ sudo cp ./lib* /usr/local/lib
 ```
 
