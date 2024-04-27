@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="YoloV5_NPU" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/YoloV5_NPU" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="parking.jpg" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/YoloV5_NPU" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="../images/parking.jpg" />
+				<Compiler>
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="/usr/local/include/opencv4" />
+			<Add directory="include" />
+			<Add directory="/home/radxa/software/utils" />
+		</Compiler>
+		<Linker>
+			<Add option="-O3" />
+			<Add option="-fopenmp" />
+			<Add option="`pkg-config --libs --cflags opencv4`" />
+			<Add option="-ldl" />
+			<Add option="-lpthread" />
+			<Add option="-pthread" />
+			<Add option="-lgomp" />
+			<Add option="-DNDEBUG" />
+			<Add option="-rdynamic" />
+			<Add option="-march=armv8.2-a" />
+			<Add library="/usr/local/lib/librknnrt.so" />
+		</Linker>
+		<Unit filename="include/postprocess.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/postprocess.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
