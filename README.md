@@ -105,7 +105,6 @@ To extract and run the network in Code::Blocks <br/>
 $ mkdir *MyDir* <br/>
 $ cd *MyDir* <br/>
 $ git clone https://github.com/Qengineering/YoloV5-NPU.git <br/>
-Remove master.zip, LICENSE and README.md as they are no longer needed. <br/> 
 ```
 
 ------------
