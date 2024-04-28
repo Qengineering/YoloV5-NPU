@@ -12,8 +12,7 @@ Special made for the NPU, see [Q-engineering deep learning examples](https://qen
 All models, with C++ examples can be found on the SD images.<br><br>
 ![output image]( https://qengineering.eu/github/RockPi5_Ubuntu_22.jpg ) [Rock 5 with **Ubuntu 22.04**, OpenCV, ncnn and **NPU**](https://github.com/Qengineering/Rock-5-Ubuntu-22-image)<br><br>
 ![output image]( https://qengineering.eu/github/RadxaZero3_Ubuntu_22.jpg ) [Radxa Zero 3 with **Ubuntu 22.04**, OpenCV, ncnn and **NPU**](https://github.com/Qengineering/Radxa-Zero-3-NPU-Ubuntu22)<br><br>
-
-
+All models are quantized to **int8**, unless otherwise noted.<br>
 
 | demo             | model_name                   | RK3588  | RK3566/68  |
 | ---------------- | ---------------------------- | :-----: | :--------: |
