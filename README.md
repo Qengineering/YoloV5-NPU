@@ -110,7 +110,12 @@ $ git clone https://github.com/Qengineering/YoloV5-NPU.git <br/>
 ------------
 
 ## Running the app.
-To run the application load the project file YoloV5.cbp in Code::Blocks.<br/><br>
+You can use **Code::Blocks**.
+- Load the project file *.cbp in Code::Blocks.
+- Select _Release_, not Debug.
+- Compile and run with F9.
+- You can alter command line arguments with _Project -> Set programs arguments..._ 
+
 Or use **Cmake**.
 ```
 $ cd *MyDir*
