@@ -15,37 +15,40 @@ All models, with C++ examples can be found on the SD images.<br><br>
 
 
 
-| demo             | model_name                   | inputs_shape            | dtype | RK3588  | RK3566/68  |
-| ---------------- | ---------------------------- | ----------------------- | ----- | :-----: | :--------: |
-| yolov5           | yolov5s_relu                 | [1, 3, 640, 640]        | INT8  | 50.0    | 14.8       |
-|                  | yolov5n                      | [1, 3, 640, 640]        | INT8  | 58.8    | 19.5       |
-|                  | yolov5s                      | [1, 3, 640, 640]        | INT8  | 37.7    | 11.7       |
-|                  | yolov5m                      | [1, 3, 640, 640]        | INT8  | 16.2    | 5.7        |
-| yolov6           | yolov6n                      | [1, 3, 640, 640]        | INT8  | 63.0    | 18.0       |
-|                  | yolov6s                      | [1, 3, 640, 640]        | INT8  | 29.5    | 8.1        |
-|                  | yolov6m                      | [1, 3, 640, 640]        | INT8  | 15.4    | 4.5        |
-| yolov7           | yolov7-tiny                  | [1, 3, 640, 640]        | INT8  | 53.4    | 16.1       |
-|                  | yolov7                       | [1, 3, 640, 640]        | INT8  | 9.4     | 3.4        |
-| yolov8           | yolov8n                      | [1, 3, 640, 640]        | INT8  | 53.1    | 18.2       |
-|                  | yolov8s                      | [1, 3, 640, 640]        | INT8  | 28.5    | 8.9        |
-|                  | yolov8m                      | [1, 3, 640, 640]        | INT8  | 12.1    | 4.4        |
-| yolox            | yolox_s                      | [1, 3, 640, 640]        | INT8  | 30.0    | 10.0       |
-|                  | yolox_m                      | [1, 3, 640, 640]        | INT8  | 12.9    | 4.8        |
-| ppyoloe          | ppyoloe_s                    | [1, 3, 640, 640]        | INT8  | 28.8    | 9.2        |
-|                  | ppyoloe_m                    | [1, 3, 640, 640]        | INT8  | 13.1    | 5.04       |
-| yolov5_seg       | yolov5n-seg                  | [1, 3, 640, 640]        | INT8  | 9.4     | 1.04       |
-|                  | yolov5s-seg                  | [1, 3, 640, 640]        | INT8  | 7.8     | 0.87       |
-|                  | yolov5m-seg                  | [1, 3, 640, 640]        | INT8  | 6.1     | 0.71       |
-| yolov8_seg       | yolov8n-seg                  | [1, 3, 640, 640]        | INT8  | 8.9     | 0.91       |
-|                  | yolov8s-seg                  | [1, 3, 640, 640]        | INT8  | 7.3     | 0.87       |
-|                  | yolov8m-seg                  | [1, 3, 640, 640]        | INT8  | 4.5     | 0.7        |
-| ppseg	           | ppseg_lite_1024x512          |	[1, 3, 512, 512]	      | INT8	| 27.5    | 2.4        |
-| RetinaFace       | RetinaFace_mobile320         | [1, 3, 320, 320]        | INT8  | 243.6   | 88.5       |
-|                  | RetinaFace_resnet50_320      | [1, 3, 320, 320]        | INT8  | 43.4    | 11.8       |
-| PPOCR-Det        | ppocrv4_det                  | [1, 3, 480, 480]        | INT8  | 31.5    | 15.1       |
-| PPOCR-Rec        | ppocrv4_rec                  | [1, 3, 48, 320]         | FP16  | 35.7    | 17.3       |
+| demo             | model_name                   | RK3588  | RK3566/68  |
+| ---------------- | ---------------------------- | :-----: | :--------: |
+| yolov5           | yolov5s_relu                 | 50.0    | 14.8       |
+|                  | yolov5n                      | 58.8    | 19.5       |
+|                  | yolov5s                      | 37.7    | 11.7       |
+|                  | yolov5m                      | 16.2    | 5.7        |
+| yolov6           | yolov6n                      | 63.0    | 18.0       |
+|                  | yolov6s                      | 29.5    | 8.1        |
+|                  | yolov6m                      | 15.4    | 4.5        |
+| yolov7           | yolov7-tiny                  | 53.4    | 16.1       |
+|                  | yolov7                       | 9.4     | 3.4        |
+| yolov8           | yolov8n                      | 53.1    | 18.2       |
+|                  | yolov8s                      | 28.5    | 8.9        |
+|                  | yolov8m                      | 12.1    | 4.4        |
+| yolox            | yolox_s                      | 30.0    | 10.0       |
+|                  | yolox_m                      | 12.9    | 4.8        |
+| ppyoloe          | ppyoloe_s                    | 28.8    | 9.2        |
+|                  | ppyoloe_m                    | 13.1    | 5.04       |
+| yolov5_seg       | yolov5n-seg                  | 9.4     | 1.04       |
+|                  | yolov5s-seg                  | 7.8     | 0.87       |
+|                  | yolov5m-seg                  | 6.1     | 0.71       |
+| yolov8_seg       | yolov8n-seg                  | 8.9     | 0.91       |
+|                  | yolov8s-seg                  | 7.3     | 0.87       |
+|                  | yolov8m-seg                  | 4.5     | 0.7        |
+| ppseg	           | ppseg_lite_1024x512          | 27.5    | 2.4        |
+| RetinaFace       | RetinaFace_mobile320<sup>1</sup>    | 243.6   | 88.5       |
+|                  | RetinaFace_resnet50_320<sup>1</sup> | 43.4    | 11.8       |
+| PPOCR-Det        | ppocrv4_det<sup>2</sup>             | 31.5    | 15.1       |
+| PPOCR-Rec        | ppocrv4_rec<sup>3</sup>             | 35.7    | 17.3       |
 
-* Due to the pixelwise filling and drawing, segmentation models are relative slow
+<sup>1</sup> Input size 320x320<br>
+<sup>2</sup> Input size 480x480<br>
+<sup>3</sup> Input size 48x320, FP16<br>
+* Due to the pixel-wise filling and drawing, segmentation models are relatively slow
 
 ------------
 
