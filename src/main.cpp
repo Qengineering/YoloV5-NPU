@@ -90,20 +90,14 @@ int main(int argc, char** argv)
 
     for(i=0;i<16;i++) FPS[i]=0.0;
 
-    if (argc < 2) {
-        fprintf(stderr,"Usage: %s [imagepath] [model (optional)]\n", argv[0]);
+    if (argc < 3) {
+        fprintf(stderr,"Usage: %s [imagepath] [model]\n", argv[0]);
         return -1;
     }
 
     printf("post process config: box_conf_threshold = %.2f, nms_threshold = %.2f\n", box_conf_threshold, nms_threshold);
 
-    if (argc == 3) {
-        model_name = argv[2];
-    }
-    else{
-        model_name = (char*) "./model/yolov5n.rknn";
-    }
-
+    model_name = argv[2];
 
     // Create the neural network
     printf("Loading mode...\n");
