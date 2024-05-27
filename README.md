@@ -54,7 +54,7 @@ All models are quantized to **int8**, unless otherwise noted.<br>
 ## Dependencies.
 To run the application, you have to:
 - OpenCV 64-bit installed.
-- Code::Blocks installed. (```$ sudo apt-get install codeblocks```)
+- Optional: Code::Blocks. (```$ sudo apt-get install codeblocks```)
 
 ### Installing the dependencies.
 Start with the usual 
