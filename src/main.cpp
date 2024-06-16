@@ -74,8 +74,6 @@ static unsigned char* load_model(const char* filename, int& fileSize) {
 -------------------------------------------*/
 int main(int argc, char** argv)
 {
-    char*          model_name = NULL;
-    const char*    imagepath = argv[1];
     rknn_context   ctx;
     int            img_width          = 0;
     int            img_height         = 0;
@@ -91,13 +89,15 @@ int main(int argc, char** argv)
     for(i=0;i<16;i++) FPS[i]=0.0;
 
     if (argc < 3) {
-        fprintf(stderr,"Usage: %s [imagepath] [model]\n", argv[0]);
+        fprintf(stderr,"Usage: %s [model] [imagepath]\n", argv[0]);
         return -1;
     }
 
-    printf("post process config: box_conf_threshold = %.2f, nms_threshold = %.2f\n", box_conf_threshold, nms_threshold);
+    char*          model_name = argv[1];
+    const char*    imagepath = argv[2];
 
-    model_name = argv[2];
+    printf("model: %s", model_name);
+    printf("post process config: box_conf_threshold = %.2f, nms_threshold = %.2f\n", box_conf_threshold, nms_threshold);
 
     // Create the neural network
     printf("Loading mode...\n");
