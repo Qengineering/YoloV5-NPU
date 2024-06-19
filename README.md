@@ -7,7 +7,7 @@ Special made for the NPU, see [Q-engineering deep learning examples](https://qen
 
 ------------
 
-## Model performance benchmark(FPS)
+## Model performance benchmark (FPS)
 
 All models, with C++ examples can be found on the SD images.<br><br>
 ![output image]( https://qengineering.eu/github/RockPi5_Ubuntu_22.jpg ) [Rock 5 with **Ubuntu 22.04**, OpenCV, ncnn and **NPU**](https://github.com/Qengineering/Rock-5-Ubuntu-22-image)<br><br>
@@ -28,6 +28,10 @@ All models are quantized to **int8**, unless otherwise noted.<br>
 | yolov8           | yolov8n                      | 53.1    | 18.2       |
 |                  | yolov8s                      | 28.5    | 8.9        |
 |                  | yolov8m                      | 12.1    | 4.4        |
+| yolov10          | yolov10n                     | 35.1    | 12.5       |
+|                  | yolov8s                      | 23.4    | 7.3        |
+|                  | yolov8m                      |  9.7    | 3.4        |
+|                  | yolov8x                      |  5.1    | 1.8        |
 | yolox            | yolox_s                      | 30.0    | 10.0       |
 |                  | yolox_m                      | 12.9    | 4.8        |
 | ppyoloe          | ppyoloe_s                    | 28.8    | 9.2        |
